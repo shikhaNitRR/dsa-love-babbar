@@ -24,6 +24,8 @@ public class HollowPatterns {
             System.out.println();
         }
     }
+
+
 //        System.out.println(" Hollow Right Angled Triangle ");
 //        int row = 5;
 //        int col = 5;
