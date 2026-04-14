@@ -23,33 +23,23 @@ public class HollowPatterns {
             }
             System.out.println();
         }
+
+        System.out.println(" Hollow Right Angled Triangle ");
+        int row = 5;
+        for (int i = 1; i <= row; i++) {
+            if (i == 1 || i == 2 || i == row) {//first,second and last row
+                for (int j = 1; j <= i; j++) {
+                    System.out.print("* ");
+                }
+            } else {
+                //middle rows
+                System.out.print("* "); //star at start
+                for (int l = 1; l <= i - 2; l++) { //in between spaces (row-2)
+                    System.out.print("  ");
+                }
+                System.out.print("* ");//star at end of the row
+            }
+            System.out.println();//move to next line
+        }
     }
-
-
-//        System.out.println(" Hollow Right Angled Triangle ");
-//        int row = 5;
-//        int col = 5;
-//        for (int i = 1; i <= row; i++) {
-//                if (i == 1 || i == 2 || i == row) {
-//                    for (int j = 1; j <= i; j++) {
-//                        System.out.print("* ");
-//                    }
-//                }
-//                else {
-//                    System.out.println();
-//                         if (j == 1 || j == col) {
-//                         System.out.print("* ");
-//                                            }
-//                         else {
-//                                for (int k = 3; k < col; k++) {
-//                                   for (int l = 1; l <= k - 2; l++) {
-//                                     System.out.print("  ");
-//                                   }
-//                                }
-//                        }
-//                }
-//            }
-//           System.out.println();
-//        }
-//    }
 }
