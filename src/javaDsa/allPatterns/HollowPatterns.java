@@ -24,8 +24,8 @@ public class HollowPatterns {
             System.out.println();
         }
 
-        System.out.println(" Hollow Right Angled Triangle ");
-        int row = 5;
+        System.out.println(" Hollow Right Angled Triangle way1:");
+        int row = 10;
         for (int i = 1; i <= row; i++) {
             if (i == 1 || i == 2 || i == row) {//first,second and last row
                 for (int j = 1; j <= i; j++) {
@@ -38,6 +38,25 @@ public class HollowPatterns {
                     System.out.print("  ");
                 }
                 System.out.print("* ");//star at end of the row
+            }
+            System.out.println();//move to next line
+        }
+        System.out.println();
+        System.out.println(" Hollow Right Angled Triangle way2:");
+        for (int i = 1; i <= row; i++) {
+            if (i == 1 || i == 2 || i == row) {//first,second and last row
+                for (int j = 1; j <= i; j++) {
+                    System.out.print("* ");
+                }
+            } else {
+                //middle rows
+                for (int l = 1; l <= i ; l++) {
+                    if (l == 1 || l == i) {  // for each row other than row r1,r1 and last row,  first col and ith col has stars and other has spaces
+                        System.out.print("* ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                }
             }
             System.out.println();//move to next line
         }
