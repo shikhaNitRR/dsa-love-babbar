@@ -60,5 +60,14 @@ public class HollowPatterns {
             }
             System.out.println();//move to next line
         }
+
+
+        System.out.println(" Hollow Triangle ");
+        for (int i = 1; i <= row; i++) {
+            for (int j = 1; j <= row-i; j++) {
+                System.out.println("  ");
+            }
+            System.out.println();
+        }
     }
 }
