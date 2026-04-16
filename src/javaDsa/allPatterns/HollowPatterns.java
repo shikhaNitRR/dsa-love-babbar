@@ -50,7 +50,7 @@ public class HollowPatterns {
                 }
             } else {
                 //middle rows
-                for (int l = 1; l <= i ; l++) {
+                for (int l = 1; l <= i; l++) {
                     if (l == 1 || l == i) {  // for each row other than row r1,r1 and last row,  first col and ith col has stars and other has spaces
                         System.out.print("* ");
                     } else {
@@ -62,10 +62,22 @@ public class HollowPatterns {
         }
 
 
-        System.out.println(" Hollow Triangle ");
+        System.out.println("   Hollow Triangle:  ");
+        row=5;
         for (int i = 1; i <= row; i++) {
-            for (int j = 1; j <= row-i; j++) {
-                System.out.println("  ");
+            for (int j = 1; j <= row - i; j++) {
+                System.out.print("  ");
+            }
+            if (i == 1 || i == row) {
+                for (int j = 1; j <= 2*i-1; j++) {
+                    System.out.print("* ");
+                }
+            } else {
+                System.out.println("* ");
+                for (int j = 1; j <= 2*i-1; j++) {
+                    System.out.print("  ");
+                }
+                System.out.print("* ");
             }
             System.out.println();
         }
