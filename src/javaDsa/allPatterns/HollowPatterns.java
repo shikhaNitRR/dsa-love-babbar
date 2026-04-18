@@ -62,23 +62,23 @@ public class HollowPatterns {
         }
 
         System.out.println("   Hollow Triangle:  ");
-        row=5;
+        row = 5;
         for (int i = 1; i <= row; i++) {
             for (int j = 1; j <= row - i; j++) {
                 System.out.print("  ");
             }
-            if (i == 1 || i == row) {
-                for (int j = 1; j <= 2*i-1; j++) {
+            if (i == 1 || i == row) { //first and last row
+                for (int j = 1; j <= 2 * i - 1; j++) {
                     System.out.print("* ");
                 }
-            } else {
-                System.out.println("* ");
-                for (int j = 1; j <= 2*i-1; j++) {
-                    System.out.print("  ");
+            } else { //middle rows
+                System.out.print("* "); //star at beginning
+                for (int j = 1; j <= 2 * i - 3; j++) {
+                    System.out.print("  "); //spaces
                 }
-                System.out.print("* ");
+                System.out.print("* ");//star at end
             }
-            System.out.println();
+            System.out.println();//move to nextLine
         }
     }
 }
