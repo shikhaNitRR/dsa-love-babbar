@@ -9,7 +9,7 @@ public class Patterns {
             for(int j=1;j<=5;j++){
                 System.out.print("* ");
             }
-            System.out.println(" ");
+            System.out.println();
         }
         //Pattern2
         System.out.println("======Pattern2=====Right Angled Triangle ");
@@ -32,7 +32,7 @@ public class Patterns {
                 System.out.print("* ");
             }
             //move to next line
-            System.out.println(" ");
+            System.out.println();
         }
 
         System.out.println("======Pattern4=====Inverted Right angled triangle");
@@ -42,7 +42,7 @@ public class Patterns {
                 System.out.print("* ");
             }
             //move to next line
-            System.out.println(" ");
+            System.out.println();
         }
     }
 }
