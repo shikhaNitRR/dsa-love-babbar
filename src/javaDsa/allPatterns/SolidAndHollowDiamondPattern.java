@@ -7,23 +7,23 @@ public class SolidAndHollowDiamondPattern {
         //first half
         for (int i = 1; i <= row; i++) {
             for (int j = 1; j <= row - i; j++) {
-                System.out.print("  ");
+                System.out.print(" ");
             }
             for (int j = 1; j <= i; j++) {
-                System.out.print("*  ");
+                System.out.print("* ");
             }
             System.out.println();
         }
-//second half
+        //second half
         for (int i = 1; i <= row; i++) {
             if (i == 1) {
                 continue;
             }
-            for (int j = 1; j <= i-1; j++) {
-                System.out.print("  ");
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" ");
             }
             for (int j = 1; j <= row - i; j++) {
-                System.out.print("*  ");
+                System.out.print("* ");
             }
             System.out.println();
         }
