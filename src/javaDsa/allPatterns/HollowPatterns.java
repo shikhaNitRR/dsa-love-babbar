@@ -80,5 +80,35 @@ public class HollowPatterns {
             }
             System.out.println();//move to nextLine
         }
-    }
+
+
+        System.out.println("  Inverted Hollow Triangle:  ");
+        int n = 4;
+        //second half
+        for (int i = 1; i <= n; i++) {//4 rows
+            if (i == 1) { //row 1
+                for (int j = 1; j <= 2 * n - 1; j++) {
+                    System.out.print("* ");
+                }
+            }
+            else
+            if(i==n)   { //last row
+                for (int j = 1; j <=i-1; j++) {
+                    System.out.print("  ");
+                }
+                System.out.print("* ");
+            }
+            else{ //remaining rows
+                for (int j = 1; j <= i - 1; j++) {
+                    System.out.print("  ");
+                }
+                System.out.print("* ");
+                for (int j = 1; j <= 2*(n-i)-1; j++) {
+                    System.out.print("  ");
+                }
+                System.out.print("*");
+            }
+            System.out.println();
+            }
+        }
 }
