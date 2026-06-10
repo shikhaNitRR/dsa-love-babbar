@@ -25,7 +25,7 @@ public class AlphabeticPattern {
             System.out.println();
         }
 
-        System.out.println("=================");
+        System.out.println("=============================");
         System.out.println();
 
         int n = 5;
@@ -48,6 +48,20 @@ public class AlphabeticPattern {
             }
             a--;
             System.out.println();
+        }
+
+        System.out.println("============================");
+        System.out.println();
+        int t = 4;
+        for (int i = 1; i <= t; i++) {
+            int row = 'A' - 1;
+            for (int j = 1; j <= i; j++) {
+
+                System.out.print((char) (row + i) + " ");
+                row--;
+            }
+            System.out.println();
+
         }
     }
 }
