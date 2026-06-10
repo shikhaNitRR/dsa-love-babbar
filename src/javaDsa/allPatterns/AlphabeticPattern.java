@@ -14,12 +14,12 @@ public class AlphabeticPattern {
         System.out.println();
         //OR
 
-        int a=65;
-        for(int i=65;i<=70;i++) {
+        int a = 65;
+        for (int i = 65; i <= 70; i++) {
 
-            for(int j=a;j<=i;j++) {
+            for (int j = a; j <= i; j++) {
 
-                System.out.print((char)(j)+" ");
+                System.out.print((char) (j) + " ");
             }
 
             System.out.println();
@@ -28,8 +28,8 @@ public class AlphabeticPattern {
         System.out.println("=================");
         System.out.println();
 
-        int n=5;
-        for(int i=1;i<=5;i++) {
+        int n = 5;
+        for (int i = 1; i <= 5; i++) {
 
             for (int j = 1; j <= i; j++) {
 
@@ -41,15 +41,14 @@ public class AlphabeticPattern {
 
         //OR
 
-        a=69;
-        for(int i=1;i<=5;i++) {
-            for(int j=69;j>=a;j--) {
-                System.out.print((char)j +" ");
+        a = 69;
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 69; j >= a; j--) {
+                System.out.print((char) j + " ");
             }
             a--;
             System.out.println();
         }
     }
-
-
 }
+

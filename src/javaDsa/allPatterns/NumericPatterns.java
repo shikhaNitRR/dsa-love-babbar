@@ -25,20 +25,20 @@ public class NumericPatterns {
         }
         System.out.println();
 //Pattern3
-        int k=0;
+        int k = 0;
         for (int i = 1; i <= 5; i++) {
 
-            for (int j =1; j <= i; j++) {
-                System.out.print(k +j +" ");
+            for (int j = 1; j <= i; j++) {
+                System.out.print(k + j + " ");
 
             }
-k++;
+            k++;
             System.out.println();
 
         }
 //Pattern4
         System.out.println();
-        int count=0;
+        int count = 0;
         for (int i = 1; i <= 5; i++) {
 
             for (int j = 1; j <= i; j++) {
@@ -47,6 +47,5 @@ k++;
             }
             System.out.println();
         }
-
     }
 }
