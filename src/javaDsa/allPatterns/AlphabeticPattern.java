@@ -63,6 +63,25 @@ public class AlphabeticPattern {
             System.out.println();
 
         }
+
+        System.out.println("=============================");
+        System.out.println();
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            int val = 'A';
+            for (int j = 1; j <= i; j++) {
+                System.out.print((char) val + " ");
+                val++;
+            }
+            int rowVal = i + 'A' - 1;
+            for (int k = 1; k < i; k++) {
+                System.out.print((char) (rowVal - 1) + " ");
+                rowVal--;
+            }
+            System.out.println();
+        }
     }
 }
 
