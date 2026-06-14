@@ -30,7 +30,6 @@ public class NumericPatterns {
 
             for (int j = 1; j <= i; j++) {
                 System.out.print(k + j + " ");
-
             }
             k++;
             System.out.println();
@@ -49,21 +48,30 @@ public class NumericPatterns {
         }
 
         System.out.println("=================================");
-
-        for(int i=1;i<=4;i++){
-            for(int j=1;j<=4-i;j++){
+//Pattern 5
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= 4 - i; j++) {
                 System.out.print(" ");
             }
-            for(int j=1;j<=i;j++){
+            for (int j = 1; j <= i; j++) {
                 System.out.print(j);
             }
-            for(int r=i;r>=1;r--){
-                if(i==1){continue;}
+            for (int r = i; r >= 1; r--) {
+                if (i == 1) {
+                    continue;
+                }
                 System.out.print(r);
             }
             System.out.println();
         }
-
+//Pattern 6
         System.out.println();
+        int l = 6;
+        for (int i = 1; i <= l; i++) {
+            for (int j = 1; j <= l - i + 1; j++) {
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
     }
 }
