@@ -73,5 +73,31 @@ public class NumericPatterns {
             }
             System.out.println();
         }
+        System.out.println();
+
+//Pattern 7
+        for (int i = 1; i <= l; i++) {
+            for (int j = 1; j <= l - i; j++) {
+                System.out.print(" ");
+            }
+            for ( k = 1; k <=i; k++) {
+                //int s=k;
+                System.out.print(k+" ");
+            }
+            System.out.println();
+        }
+//Pattern 8
+        System.out.println();
+        for (int i = 1; i <= l; i++) {
+            for (int j = 1; j <=l-i; j++) {
+                System.out.print("  ");
+            }
+            int g=i;
+            for (int j = 1; j <=i; j++) {
+                System.out.print(g+" ");
+            g--;
+            }
+            System.out.println();
+        }
     }
 }
