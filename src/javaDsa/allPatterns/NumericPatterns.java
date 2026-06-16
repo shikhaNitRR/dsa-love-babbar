@@ -99,5 +99,45 @@ public class NumericPatterns {
             }
             System.out.println();
         }
+
+//Pattern 9
+        System.out.println();
+        System.out.println("WAY1 TO PRINT THIS PATTERN");
+        for (int i = 1; i <= l; i++) {
+            for (int j = 1; j <=l-i; j++) {
+                System.out.print("  ");
+            }
+            int g=i;
+            for (int j = 1; j <=i; j++) {
+                System.out.print(g+" ");
+                g--;
+            }
+            for (int j = 1; j <=i; j++) {
+                if(j==1)
+                    continue;
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println("WAY2 TO PRINT THIS PATTERN");
+        for (int i = 1; i <= l; i++) {
+
+            // spaces
+            for (int j = 1; j <= l - i; j++) {
+                System.out.print("  ");
+            }
+            // descending
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j + " ");
+            }
+            // ascending
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+
+            System.out.println();
+        }
     }
 }
