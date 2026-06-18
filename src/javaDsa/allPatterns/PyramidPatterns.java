@@ -52,5 +52,28 @@ public class PyramidPatterns {
             }
             System.out.println();
         }
+        System.out.println();
+        System.out.println(" HOUR GLASS pattern");
+        System.out.println();
+        int len = 6;
+        for (int i = 1; i <= len; i++) {
+            for (int j = 1; j <= i - 1; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= len - i + 1; j++) {
+                System.out.print("*   ");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <= len; i++) {
+            if (i == 1) continue;
+            for (int j = 1; j <= len - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*   ");
+            }
+            System.out.println();
+        }
     }
 }
