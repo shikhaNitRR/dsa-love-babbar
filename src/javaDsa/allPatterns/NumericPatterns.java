@@ -139,5 +139,33 @@ public class NumericPatterns {
 
             System.out.println();
         }
+        System.out.println();
+        //Pattern 10
+        System.out.println();
+        System.out.println("Numeric HOUR GLASS");
+        int len = 6;
+        for (int i = 1; i <= len; i++) {
+            for (int j = 1; j <= i - 1; j++) {
+                System.out.print("  ");
+            }
+            int p = i;
+            for (int j = 1; j <= len - i + 1; j++) {
+                System.out.print(p + "   ");
+                p++;
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <= len; i++) {
+            if (i == 1) continue;
+            for (int j = 1; j <= len - i; j++) {
+                System.out.print("  ");
+            }
+            int p = len - i + 1;
+            for (int j = 1; j <= i; j++) {
+                System.out.print(p + "   ");
+                p++;
+            }
+            System.out.println();
+        }
     }
 }
